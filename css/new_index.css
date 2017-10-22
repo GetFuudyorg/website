@@ -1,0 +1,240 @@
+/**navigation bar**/
+@import url("new_share_navbar.css");
+
+/**bottom navigation bar**/
+@import url("share_bottom_navbar.css");
+
+body {
+  font-family: "Varela Round";
+}
+
+
+.post-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    position: absolute;
+}
+
+
+
+
+/**video section**/
+#video-landing {
+    height: 650px;
+    position: relative;
+    overflow-y: hidden;
+    color: white;
+}
+
+
+#video-landing video {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+}
+
+#main_page_logo {
+    width: 60%;
+    height: auto;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+#video-landing p{
+    padding-left: 12%;
+    margin: 5px 0 30px;
+    font-size: 20px;
+}
+
+#video-landing article{
+
+}
+
+
+
+/**how it work**/
+.how_it_work {
+    width:100%;
+    height:80%;
+}
+
+
+
+.thumbnail {
+    position: relative;
+    border: 0 none;
+    box-shadow: none;
+}
+
+#how_it_work_img .caption {
+    font-size: 55px;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+}
+
+#how_it_work_img .caption p {
+    color: white;
+    font-family: 'Noto';
+}
+
+/**timeline**/
+.time_line{
+    width:100%;
+    height:auto;
+}
+
+#time_line_img h1{
+    padding:2% 5% 2%;
+    color:orange;;
+    font-family: "Varela Round";
+    font-size:32px;
+
+}
+
+/**support us**/
+.floating-box {
+    display: inline-block;
+    width: 200px;
+    height: 75px;
+    margin: 30px;
+    padding-left: 0px;
+    margin-left: 150px;
+}
+#support_us{
+    position: relative;
+    background-color: grey;
+    background-image: url("../image/main_supporter_us_bgimg_1.jpg");
+    width:100%;
+    height:100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#support_us #support_us_title{
+    padding-top: 3.9%;
+}
+
+#support_us #support_us_title h{
+    font-size: 32px;
+    padding-left: 5%;
+    color: white
+}
+
+#support_us .number {
+    font-size: 60px;
+    color: orange;
+    margin-bottom: 0px;
+    padding-left: 3%;
+    font-weight: bold;
+}
+
+#support_us .units {
+    font-size: 25px;
+    margin-left: 4%;
+    color: orange;
+
+}
+
+#support_us .organization{
+    font-size: 22px;
+    margin-left: 4%;
+    color: white;
+
+}
+
+#support_us_container{
+    padding-top: 4.3%;
+    padding-left: 15%;
+    margin-bottom: 6%;
+}
+
+
+/**supporters**/
+
+#supporters{
+    position:relative;
+    padding-top: 3%;
+}
+
+#supporters #supporters_title_text h{
+    font-size: 32px;
+    padding: 1% 5%;
+    color: orange;
+    font-family: "Varela Round";
+
+}
+
+#supporters #supporters_title_text p{
+    font-size: 16px;
+    padding-left: 5%;
+    font-family: "Varela Round";
+}
+
+.ms_img_1{
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+}
+
+.ms_img_2{
+    width: 57%;
+    height: auto;
+    padding-top: 12%
+}
+
+.ms_img_3{
+    width:80%;
+    height:auto;
+}
+
+.ms_img_4{
+    width: 100%;
+    height: auto;
+    margin-top: 28%;
+}
+
+.ms_img_5{
+    width: 85%;
+    height: auto;
+    margin-top: 1%;
+}
+
+.ms_img_6{
+    width: 95%;
+    height: auto;
+    margin-top: 8%;
+}
+
+.ms_img_7{
+    width: 70%;
+    height: auto;
+}
+
+.ms_img_8{
+    width: 70%;
+    height: auto;
+    margin-top: 2%;
+}
+.ms_img_9{
+    width: 98%;
+    height: auto;
+    margin-top: 10%;
+}
+
+
+.ms_img_10{
+    margin-top: 20%;
+    margin-left: 18%;
+    font-family: 'Noto Sans';
+}
+

@@ -1,0 +1,289 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--import bootstrap, jquery and socket.io-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+    <link rel="favicon" href="favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+
+    <!--Import custom css-->
+    <link rel="stylesheet" href="./css/about.css">
+
+</head>
+<body>
+
+<!-- Begin navigation bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+                <img id="top_nav_logo" src="./image/logo3.png" alt="fuudy_logo"  class="logo_in_bar">
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" id="upper_nav">
+                <li><a class="spc" href="./index.html"><span></span>MAIN</a></li>
+                <li><a class="spc" href="./about.html"><span></span>OUR STORY</a></li>
+                <li><a class="spc" href="./JoinUs.html"><span></span>JOIN US</a></li>
+                <li><a class="spc" href="./supporters.html"><span></span>SUPPORTERS</a></li>
+                <li><a class="spc" href="./contact.html"><span></span>CONTACT</a></li>
+                <li><a class="spc" href="./donate.html"><span></span>DONATE </a></li>
+                <li><a class="btn btn-warning" href="https://www.indiegogo.com/projects/fuudy-smartsharing-fridges-that-feed-the-hungry-food-network--2/coming_soon">SUPPORT US ON INDIEGOGO</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- End navigation bar -->
+
+
+<!--<div class="w3-container w3-padding-64 w3-orange w3-grayscale-min" id="us">
+    <div class="w3-content">
+        <h1 class="w3-left w3-text-grey"><b>Food Insecurity</b></h1>
+        <!--<img class="w3-round w3-grayscale-min" src="image/DSC01961.jpg" style="width:100%;margin:32px 0">-->
+        <!--<p class="w3-left"><i>The majority of the Canadians households are unware what 12% food-insecure households
+
+            are tackling: some of them have to go vegans when out of pockets, not out of healthy concerns.
+
+            What’s worse, food insecurity influences the poor, in addition to other groups as students, elders
+
+            and children. A research exposes that as high as 39% students experienced some degree of food
+
+            insecurity, for example 86.2% interviewed students will apply for a loan or bursary to cope with
+
+            food insecurity. However, less than one-quarter of food-insecure households utilize food
+
+            banks, and barriers can be time, food skills and the availability of processed foods. Moreover, those who use the established food system risk nutritional problems in the long
+
+            term, as research show.</i>
+        </p><br>
+    </div>
+</div>
+
+
+<div class="w3-container w3-padding-64 w3-white w3-grayscale-min" id="Waste">
+    <div class="w3-content">
+        <h1 class="w3-left w3-text-orange"><b>Food Waste</b></h1>
+        
+        <!--<img class="w3-round w3-grayscale-min" src="image/DSC01961.jpg" style="width:100%;margin:32px 0">-->
+        <!--<p class="w3-left"><i>Meanwhile, there was an estimation that $31 billion worth of food would turn out to be
+
+            garbage in 2014, equivalent to 2% of Canadian’s gross domestic product (GDP) in 2013, which
+
+            was enough for the whole Canada for a whole winter 7 . Sorrowfully, the National Geographic
+
+            points out, “about one third of the planet’s food goes to waste, often because of its looks.” 8
+
+            Moreover, the true cost is of the disposal of this $31 million worth trash is astronomical 9 - the
+
+            cost of labour, energy transportation, inventory, disposal, and financial audits.</i>
+        </p><br>
+    </div>
+</div>-->
+
+
+
+
+
+<!--<div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <h3>Initiator</h3>
+            <p>This Fuddy project is initiated by the Futurist, a non-profit organization committing to empower
+
+                students and improve the quality of life of everyone on the planet, integrating with technology,
+
+                innovation, social responsibility and enthusiasm through introducing different original and
+
+                influential programs. The Fuddy is one of our original pilot programs. Over 100 ambitious
+
+                student leaders from University of Toronto, Ryerson University, York University, Western
+
+                University and Sheridan College are currently involved, and we are expanding to gather more
+
+                future leaders around the world. You are always more than welcomed to become one of us, or
+
+                support students’ creative passion.</p>
+
+        </div>
+        <div class="w3-col m6">
+            <img class="w3-image w3-round-large" src="image/DSC01961.jpg" alt="Buildings" width="500" height="274">
+        </div>
+    </div>
+</div>-->
+
+<div id="about_title">
+    <article>
+	<h1>OUR STORY</h1>
+	<p><a class="btn btn-warning btn-lg" href="https://online.flippingbook.com/view/628059">FUUDY In 6 Pages</a></p>
+    </article>
+    </div>
+</div>
+
+<div class="w3-container w3-padding-64" style="background-color:rgb(241,150,1)">
+    <div class="w3-row-padding">
+     <h3 class="w3-text-white" ><b>FOOD WASTE</b></h3>
+        <img class="w3-image w3-round-large" src="image/about_problem_food waste.jpg" >
+    </div>
+</div>
+
+<div class="w3-container w3-padding-64" style="background-color:rgb(76,76,76)">
+    <div class="w3-row-padding">
+        <h3 class="w3-text-orange" ><b>FOOD INSECURITY</b></h3>
+        <img class="w3-image w3-round-large" src="image/about_problem_food insecurity.jpg" >
+    </div>
+</div>
+
+
+<div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+        
+        <div class="w3-half" "w3-container">
+            <h4>INTRO TO FUUDY</h4>
+            
+            <p> FUUDY is Canada's first tech-based non-profit redistributing surplus food via SmartSharing Fridges x social network to resolve hunger and food waste.</p>
+
+            <p>Since founded in November 2016, FUUDY has gathered 150+ supporters, including former MP Olivia Chow, researcher from Humanistic Intelligence Lab, advisors including consultants from Accenture and Ernst & Young, and professors in Canada and the UK, organizations including student associations from 11 universities, food banks, restaurants, and other organization.</p>
+            
+            <p>In 2017, with its outstanding contribution to the community and entrepreneurial activities, FUUDY received 1 out of 8 scholarships awarded by Association of Chinese Canadian Entrepreneurs (ACCE).</p>
+       
+        </div>
+        <div class="w3-half" "w3-container">
+             <h4>OUR VISION</h4>
+
+            <p> Save food, save people.</p>
+            
+            <h4>OUR MISSION</h4>
+
+            <p> Revamp existing hunger solutions and tackle the root cause of food waste issues with technology.</p>
+       
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-orange w3-padding-64">
+    <div class="w3-row-padding">
+        <h3 class="w3-text-white" ><b>Q&A</b></h3>
+        <div class="w3-half" "w3-container">
+            
+            <p class="w3-text-white"> Who can share their surplus food with FUUDY?</p>
+
+            <p>Anyone! We welcome all individual and retailer to share their supports.</p>
+            
+            <p class="w3-text-white"> Will I be held liability for the food I share?</p>
+
+            <p>Nope! Canada's Donation of Food Act passed in 1994 protects sharers from liabilities for any damages caused by the consumption of the food shared. Sadly, not many people know about it.</p>
+            <p>We will also put a disclaimer on the fridge and our web to legally exempt sharers from any responsibility, including negligence.</p>
+            
+            <p class="w3-text-white"> Who will benefit from the surplus food?</p>
+
+            <p>People experiencing food insecurity, including children, youth, low- income household, homeless people, etc.</p>
+
+            <p class="w3-text-white"> Who will redistribute the institutional surplus food?</p>
+
+            <p>Users registered as foodsavers, volunteers, staffs of the sharing corporations or receiving charities.</p>
+       
+        </div>
+        <div class="w3-half" "w3-container">
+             <p class="w3-text-white"> Any requirement for the surplus food shared?</p>
+
+            <p>For health and safety reasons, the fridge will be unable to accept raw  fish, eggs, meat, mouldy food, open tinned and dried goods. We also ask sharers to label prepared food with the date and time it was made. Labels are provided at the fridge.</p>
+            
+            <p class="w3-text-white"> Who will manage the fridge?</p>
+
+            <p>Our foodsavers and volunteers will look after the fridges based on the guidelines created by trained food health and safety professionals. We also ask everyone to share the responsibility and care when using the fridges.</p>
+            
+            
+            <p class="w3-text-white"> Where will the fridges be?</p>
+
+            <p>The pilot fridge in downtown Toronto, open to a large traffic of both sharer and receivers.</p>
+
+            <p class="w3-text-white"> What is the operation hour?</p>
+
+            <p>24/7! Feel free to drop by anytime.</p>
+       
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Begin bottom navbar-->
+<div id="bottom_nav_div">
+    <nav class="navbar" id="navbar_bottom">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar_bottom">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar_bottom">
+            <ul class="nav navbar-nav" id="bottom_nav">
+                <li><a class="spc" href="./index.html"><span></span>MAIN</a></li>
+                <li><a class="spc" href="./about.html"><span></span>OUR STORY</a></li>
+                <li><a class="spc" href="./JoinUs.html"><span></span>JOIN US</a></li>
+                <li><a class="spc" href="./supporters.html"><span></span>SUPPORTERS</a></li>
+                <li><a class="spc" href="./contact.html"><span></span>CONTACT</a></li>
+               
+                <li><a class="spc" href="./donate.html"><span></span>DONATE</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="bot_nav_icons">
+                <li><a href="https://www.facebook.com/fuudy/"><i class="fa fa-facebook-square" style="color:orange;font-size:28px;"></i></a></li>
+                <li><a href="https://www.linkedin.com/company-beta/17994252/"><i class="fa fa-linkedin-square" style="color:orange;font-size:28px;"></i></a></li>
+                <li><a href="https://www.instagram.com/thefuudy/"><i class="fa fa-instagram" style="color:orange;font-size:28px;"></i></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-wechat" style="color:orange;font-size:28px;"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Scan the QR code to follow us in WeChat!</h4>
+            </div>
+            <div class="modal-body">
+                <img id="wechat_QR" src="./image/WeChat_QR_code.jpg">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- End bottom navbar-->
+
+
+
+</body>
+</html>

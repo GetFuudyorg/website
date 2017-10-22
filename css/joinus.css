@@ -1,0 +1,114 @@
+/**navigation bar**/
+@import url("new_share_navbar.css");
+
+/**bottom navigation bar**/
+@import url("share_bottom_navbar.css");
+
+body {
+  font-family: "Varela Round";
+}
+
+#joinus_header{
+    position: relative;
+    background-color: grey;
+    background-image: url("../image/banner_join.jpeg");
+    background-size: cover;
+    width:100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+#joinus_header #joinus_title{
+    padding-top: 15%;
+text-align: center;
+    padding-top: 10%;
+}
+
+#joinus_header #joinus_title h{
+
+    font-size:50px;
+    color: white
+}
+
+
+/**Student Associations**/
+ #stuass{
+     margin-top: 0%;
+     background: DarkGrey;
+     position:relative;
+ }
+#stuass h{
+    font-size: 32px;
+    padding-left: 2%;
+    color: orange;
+    font-family: "Varela Round";
+}
+
+#stuass h2{
+    font-family: "Varela Round";
+    font-size: 22px;
+    color: white;
+}
+
+
+#stuass .join_img{
+    width:85%;
+    height:auto;
+}
+
+#stuass #r_c_p{
+    padding-left:8%;
+}
+
+
+ #volunteer{
+     margin-top: 0%;
+     background: white;
+     position:relative;
+ }
+#volunteer h{
+    font-size: 32px;
+    margin-left: 2%;
+    color: orange;
+    font-family: "Varela Round";
+}
+
+#volunteer h1{
+    font-family: "Varela Round";
+    font-size: 22px;
+    margin-left: 0%;
+    color: black;
+}
+
+#volunteer #r_c_p_2{
+    padding-left:0%;
+}
+
+#volunteer .volunteer_img{
+    width:100%;
+    height:auto;
+
+}
+
+/**Student Associations**/
+ #internships{
+     margin-top: 2%;
+     background: white;
+     border-top: solid 4px orange;
+ }
+#internships h{
+    font-size: 32px;
+    padding-left: 2%;
+    color: orange;
+    font-family: "Varela Round";
+}
+
+#internships h2{
+    font-family: "Varela Round";
+    font-size: 22px;
+    padding-left: 0%;
+    color: black;
+}

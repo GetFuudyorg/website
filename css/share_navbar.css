@@ -1,0 +1,41 @@
+body {
+  font-family: "Varela Round";
+}
+
+.nav{
+
+    color: orange;
+    list-style: none;
+    text-align: right;
+    padding: 5px 0 5px 0;
+    padding-left: 50%;
+}
+
+.nav > li{
+    display: inline-block;
+    padding: 0 1px 0 1px;
+}
+
+.nav > li > a{
+    text-decoration: none;
+    color:orange;
+    font-family: Raleway, sans-serif;
+    font-size:14px;
+}
+
+.nav > li > a:hover{
+    text-decoration: underline;
+}
+
+.nav_active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.logo_in_bar {
+    margin-left: 8%;
+}
+
+.navbar_button {
+    margin-top: 13px;
+}

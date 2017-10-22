@@ -1,0 +1,329 @@
+
+body {
+  font-family: "Varela Round";
+}
+
+
+#Road_Map {
+	position: absolute;
+	top: 1.5%;
+	width: 100%;
+	background-color: white;
+	height: 50%;
+	left:0px;
+}
+
+.Title {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 10%;
+}
+.Title p {
+	color:rgb(254, 129, 0);
+	position: absolute;
+	text_align:center;
+	left: 3vw;
+	font-weight: bold;
+	font-size: 5vh;
+	margin-top: 1vh;
+}
+.timeline {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top:18%;
+
+}
+.whiteline {
+	position: absolute;
+	bottom: 50%;
+	height: 6%;
+	background-color: rgb(254, 129, 0);
+	width: 100%;
+}
+.roadlist {
+	position: absolute;
+	bottom: 15%;
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	left:0;
+}
+.roadlist ul {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 24%;
+	padding-left: 0;
+
+}
+.roadlist ul li {
+	float: left;
+	width: 20%;
+	height: 100%;
+	list-style: none;
+	display: none;
+}
+.item {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	 align-items:center;
+}
+.point {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: rgb(254, 129, 0);
+	border-radius: 50%;
+	bottom:35%;
+	left:50%;
+}
+.introduction_up {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	color:rgba(26,26,26,.7);
+}
+.introduction_down {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	bottom: 0%;
+	color:rgba(26,26,26,.7);
+	 align-items:center;
+}
+.introduction_up p {
+	padding-top: 0px;
+	position: absolute;
+	bottom: 3vh;
+	font-size: 2vh;
+	text-align: center;
+	left:34%;
+}
+.introduction_down p{
+	position: absolute;
+	top: 2vh;
+	font-size: 2vh;
+	left:34%;
+}
+
+
+
+.worker-pic {
+	top:1vh;
+	left: 52vw;
+	width: 40%;
+	height: 80%;
+}
+.worker-pic ul {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.worker-pic ul li {
+	position: absolute;
+	height: 80%;
+	display: none;
+}
+.fuudy-movement p{
+	font-size: 3vmin;
+	color:black;
+}
+.fuudy-movement a {
+	font-size: 3vmin;
+	font-weight: bold;
+}
+.fuudy-movement h2 {
+color:rgb(254, 129, 0);
+font-weight: bold;
+font-size: 5vh;
+margin-top: 0;
+margin-bottom: 0;
+}
+.fuudy-movement a{
+	color:rgb(254, 129, 0);
+}
+.fuudy-movement ul li {
+	display: inline-block;
+	list-style: none;
+	padding-right: 2vw;
+}
+
+.fuudy-movement {
+	left: 3vw;
+	top:6vh;
+	width: 50vw;
+}
+
+#native {
+	background-color: white;
+}
+#touch {
+	background-color: white;
+	color:rgb(254, 129, 0);
+}
+#touch h2 {
+	color:rgb(254, 129, 0);
+	position: absolute;
+	top: 0;
+	left: 20px;
+	font-weight: bold;
+	font-size: 5vh;
+}
+.data {
+	color:black;
+}
+#android {
+	background-color: white;
+	color:rgba(26,26,26,.7);
+}
+#android h2 {
+	position: absolute;
+	left: 3vw;
+	top: 0;
+	color:rgb(254, 129, 0);
+	font-weight: bold;
+	font-size: 5vh;
+}
+body {
+	background-color: white;
+}
+
+html {height: 100%;width: 100%;}
+body {height: 100%;width: 100%;}
+#react {
+	height: 70vmin;
+	width: 100vw;
+/*	margin-top: 2vh;*/
+}
+#native {
+	height: 75vh;
+	width: 100vw;
+}
+
+#touch {
+	height: 70vh;
+	width: 100vw;
+}
+#android {
+	height: 70vh;
+	width: 100vw;
+}
+.containerrow, #intro-section {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.item p {
+	margin: 0;
+	font-family: Raleway, sans-serif;
+	color:black;
+}
+#Slogan {
+	width:60vw;
+	left:20vw;
+	height:50%;
+	top: 20%;
+	align-items:center;
+}
+#Slogan h1{
+	font-weight: 600;
+}
+#Slogan p{
+	font-size: 2.5vmax;
+	font-weight: 600;
+}
+#Slogan a{
+	font-size: 140%;
+	
+}
+#intro_1 {
+	font-weight: bold;
+	text-align: justify;
+}
+
+#intro_2 {
+	text-align: justify;
+}
+
+#touch p  {
+	font-size: 3vw;
+}
+#partners {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: 15%;
+	margin-bottom: 0;
+	
+}
+#partners p {
+	font-size: 3vmin;
+	font-weight: bold;
+	margin-top: 5vh;
+	margin-left: 2vw;
+
+}
+#partners li, #direct li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 2vw;
+	width: 30%;
+}
+#direct {
+	position: absolute;
+	width: 100%;
+	height: 25%;
+	top:75%;
+	
+}
+#direct a {
+	color: rgb(254, 129, 0);
+	position: relative;
+	left: 75%;
+}
+
+
+.bottom-logo{
+	min-height: 150px;
+	margin-top: 0;
+	padding: 0;
+}
+.bottom-logo img{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    opacity: 0.5;
+    margin-top: 0;
+    margin-left: auto;
+}
+.bottom-logo img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    opacity: 1;
+}
+
+.footer-logos li{
+list-style: none;
+display: inline-block;
+margin: 30% 12.5%;
+Width: 10%;
+margin-top: 0;
+}
+
+.footer-logos li img {
+ Width: 30%;
+
+}
+
+

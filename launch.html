@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+        <link rel="favicon" href="favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="bundle/app.css">
+        <link href="basic.css" type="text/css" rel="stylesheet" media="screen" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+        <script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+
+    </head>
+    <style>
+         body,Title, Slogan {font-family: "Raleway", sans-serif}
+
+    </style>
+     <body>
+         <div class="section" id="react">
+         
+            <div class="container" id="intro-section">
+
+                <div class="overlay"></div>
+                <video autoplay="" loop="" class="fillWidth fadeIn animated" style="width: 100%; margin-top: -20px;">
+                    <source src="image/Fuudy-video.mp4" type="video/mp4">
+                    
+                </video>
+                <div id = "Slogan" style="position: absolute;">
+                  <h1>Fuudy</h1>
+                  <p>Revive food, sharing, and lives beside you </p>
+                 <!-- <a href="learnmore.asp">[Become Our Partner]</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="roadmap">
+          <div class="containerrow">
+ <div id = "Road_Map">
+          <div class = "Title">
+            <p>Road Map</p>
+          </div>
+          <div class = "timeline">
+            <div class = "roadlist">
+               <div class = "whiteline">
+               </div>
+              <ul>
+                <li>
+                  <div class = "item">
+                    <div class = "introduction_up">
+                      <p>Born of Fuudy
+                      <br>Oct 2016</br>
+                      </p>
+                    </div>
+                    <div class = "point">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "item">
+                    <div class = "introduction_down">
+                      <p>Video Campaign Filming
+                      <br>Nov 2016</br>
+                      </p>
+                    </div>
+                    <div class = "point">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "item">
+                    <div class = "introduction_up">
+                      <p>Partner with SPICE Studio
+                        Partner with Oasiseco
+                      <br>Dec 2016</br>
+                      </p>
+                    </div>
+                    <div class = "point">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "item">
+                    <div class = "introduction_down">
+                      <p>Partner with 5+
+                      <br>Jan 2017</br>
+                      </p>
+                    </div>
+                    <div class = "point">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class = "item">
+                    <div class = "introduction_up">
+                      <p>Official Launch
+                      <br>Apr 2017</br>
+                      </p>
+                    </div>
+                    <div class = "point">
+                    </div>
+                  </div>
+                </li>               
+              </ul>
+            </div>
+          </div>
+          </div>
+          </div>
+      </div>
+          
+  
+    <footer class="w3-center w3-black w3-padding-16" >
+        <p style="font-size:17px">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Fuudy</a></p>
+    </footer>
+
+
+        <script type="text/javascript">
+        window.onload = function(){
+//          circle();
+ //         animateLogo();
+ //         animateRobot();
+          timeline();
+        };
+
+
+ /*       function animateLogo(){
+          TweenMax.fromTo("#logo", 2.5, {
+            css: {
+              y: "-30px",
+            }
+          }, {
+            css: {
+              y: "20px",
+            },
+
+            repeat: -1,
+            yoyo: true,
+            ease: Sine.easeInOut,
+          });
+        }*/
+ 
+ var flag = 1;
+ var secondflag = 1;
+
+
+ /*       function animateRobot(){
+          var t = new TimelineMax({repeat: -1, ease: Sine.easeInOut});
+          t.to("#android-robot", 0.2, {rotation: "-50deg"})
+          .to("#android-robot", 0.5, {rotation: "-30deg"})
+          .to("#android-robot", 1, {rotation: "-45deg"});
+        }
+
+        var sectionEnteredOnce = 0;
+        var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+
+        function updateSliderControl(){
+          var links = document.querySelectorAll("#slider-control a");
+          for(var i=0; i<links.length; i++){
+            var link = links[i];
+            // console.log(link);
+            var section = document.querySelectorAll("div.section")[i];
+            
+            var first = document.querySelectorAll("div.section")[0];
+            var second = document.querySelectorAll("div.section")[1];
+            var third = document.querySelectorAll("div.section")[2];
+            var fourth = document.querySelectorAll("div.section")[3];
+            var secondtop = second.offsetTop;
+            var secondbottom = secondtop+second.offsetHeight;
+            var thirdtop = third.offsetTop;
+            var thirdbottom = thirdtop+third.offsetHeight;
+  
+            var sectionTop = section.offsetTop;
+            var sectionBottom = sectionTop + section.offsetHeight;
+           
+            if(window.scrollY>=sectionTop && window.scrollY < sectionBottom){
+              console.log(window.scrollY);
+              console.log(sectionTop);
+             if ((sectionTop==secondtop && window.scrollY >= sectionTop + 0.5*section.offsetHeight&&flag) 
+              || (sectionTop == thirdtop &&window.scrollY <= sectionTop + 0.5*section.offsetHeight&&flag)) {
+                flag = 0;
+               timeline();
+             }
+            
+             if (sectionTop == fourth.offsetTop) {
+              flag = 1;
+              var item = $('.timeline li');
+              $(item).each(function(i) {
+                $(this).hide();
+              });
+             }
+              link.className="active";
+              if (window.scrollY >= document.querySelectorAll("div.section")[2].offsetTop - 400) {
+                sectionEnteredOnce += 1;
+                if (sectionEnteredOnce == 1) {
+                  console.log("animating...", sectionEnteredOnce);
+                  $('#lines').animateNumber({
+                //    <!number: 7095217, -->
+                      number: 0,
+                  }, 2500);
+                  $('#lines2').animateNumber({
+             //      <!-- number: 6282, -->
+                      number: 0,
+                  }, 1500);
+                  $('#lines3').animateNumber({
+           //         <!--number: 7324, -->
+                      number: 0,
+                  }, 1500);
+                }
+              } 
+               else {
+                sectionEnteredOnce = 0;
+                console.log("clear...", sectionEnteredOnce);
+              }
+            }else{
+              link.className="";
+            }
+          }
+        }
+
+        function scrollToElement(element){
+          var topOfElement = element.offsetTop;
+          TweenMax.to(window, 1, {
+            scrollTo:{
+              y: topOfElement+"px",
+            },
+
+            ease: Power2.easeInOut,
+          });
+        }
+
+        function addSmoothScrolling(){
+          var links = document.querySelectorAll("#slider-control a");
+          for(var i=0; i<links.length; i++){
+            var link = links[i];
+            var section = document.querySelectorAll("div.section")[i];
+            (function(sec){
+              // console.log(sec);
+              link.addEventListener("click", function(e){
+                // console.log(sec.offsetTop+"px");
+                scrollToElement(sec);
+                e.preventDefault();
+              })
+            })(section)
+          }
+        }
+       */
+
+
+function timeline() {
+  var item = $('.timeline li');
+   $(item[0]). fadeIn(800, function() {
+    shownext($(item[1]),1);
+  });
+}
+var timelen= $('.timeline li').length;
+function shownext(cur,i) {
+  i = i+1; if (i != timelen+1)
+  $(cur). fadeIn(800,function() {
+    shownext($(cur).next(),i);
+  });
+}
+/*
+var cur = 0;
+var len = $('.worker-pic ul li').length;
+var pics = $('.worker-pic ul li');
+var autoChange = setInterval(function() {
+  if (cur < len-1) cur++;
+  else cur = 0;
+  changeTo(cur);
+},1500);
+
+function changeTo(cur) {
+  $(pics).each(function() {
+    $(this).fadeOut();
+  });
+   $(pics[cur]).fadeIn();
+}*/
+
+       
+    </script>
+    </body>
+
+</html>

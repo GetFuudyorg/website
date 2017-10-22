@@ -1,0 +1,38 @@
+/**bottom navigation bar**/
+
+body {
+  font-family: "Varela Round";
+}
+
+#navbar_bottom{
+    margin-bottom:0px;
+    background-color: gainsboro;
+}
+
+#bottom_nav_div{
+    padding-top: 3%;
+}
+
+#bottom_nav a{
+    font-size: 15px;
+    color: black;
+    margin-top: 3%;
+    font-family: "Varela Round";
+}
+
+#myNavbar_bottom ul li a{
+    font-family: "Varela Round";
+}
+
+#wechat_QR{
+    width:417.2px;
+    height:413.4px;
+}
+
+.modal {
+    text-align: center;
+}
+
+#bot_nav_icons{
+    margin-right:4%
+}

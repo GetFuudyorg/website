@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--import bootstrap, jquery and socket.io-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+
+
+    <!--Import custom css-->
+    <link rel="stylesheet" href="./css/supporters.css">
+
+    <!--MailChimp Signup form-->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+<style>
+    body {
+        padding: 20px;
+    }
+
+    .very-specific-design {
+        width: 600px;
+        height: 400px;
+        padding: 50px;
+        text-align: center;
+        background: white;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: center center;
+    }
+
+    .scaleable-wrapper {
+        padding: 20px;
+        resize: both;
+        position: relative;
+        background: #666;
+        height: 400px;
+    }
+
+    .ui-resizable-se {
+        width: 10px;
+        height: 10px;
+        background: orange;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .bigred {
+        color: red;
+        font-size: 5rem;
+    }
+</style>
+
+<div class="scaleable-wrapper" id="scaleable-wrapper">
+
+    <div class="very-specific-design" id="very-specific-design">
+
+        <div id="advisors">
+            <div>
+                <h>ADVISORS</h>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img  class="ad_img" src="./image/Advisors/Ric_Ph.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Ric Phillips</h2>
+                        <p class="company">Co-Founder, York Entrepreneurship Development</p>
+                        <p class="desc">Richard "Ric" Phillips is an executive Communication Coach and corporate trainer. He founded his company 3V Communications in 2007, which uses a holistic approach for business communication skills development to help business leaders, consultants, entrepreneurs, managers and their teams.</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <img class ="ad_img" src="./image/Advisors/Percy.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Percy Poon</h2>
+                        <p class="company">Accenture</p>
+                        <p class="desc">Percy is a Management Consultant with 14 years of experience in the retail industry, including 7 years leading store operation teams; 4 years in merchandising and planning roles; and 3 years leading teams in transforming merchandising and supply chain processes at a US mass merchant in Canada.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img  class="ad_img" src="./image/Advisors/Liu.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Dr.Lingxuan Liu</h2>
+                        <p class="company">Former Lead Researcher At The Sustainability Consortium, Lancaster University</p>
+                        <p class="desc">Lingxuan Liu joined Pentland Centre in March 2016 as a Lecturer of Sustainability at Management School of Lancaster University.His research interests include ethical supply chains, corporate sustainability strategies, environmental information disclosure & reporting, environmental policy and climate policy. </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <img class ="ad_img" src="./image/Advisors/TyField.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Dr. David Tyfield</h2>
+                        <p class="company">Lancaster Environment Centre, Lancaster University</p>
+                        <p class="desc">David's current research develops his interests in the normative and political/power dimensions of the processes of knowledge production and their interaction with issues of global cultural political economy, especially regarding critical analysis of the emergence of a globalised "knowledge-based" economy, climate change and the rise of China. </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img class ="ad_img" src="./image/Advisors/Tammar.jpg">
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Tammara Soma</h2>
+                        <p class="company">Project Manager & Principal Investigator at Food Systems Lab</p>
+                        <p class="desc">Tammara is a 2014 Pierre Elliott Trudeau Foundation Doctoral Scholar and the Project Manager/Co-Founder of the Food Systems Lab. She is a food system planner and a Doctoral candidate in urban planning at the University of Toronto with a specilization in food waste. She brings to the Lab extensive experience working in food justice advocacy, having worked with organizations such as Sustain Ontario and FoodShare Toronto.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<script>
+    var $el = $("#very-specific-design");
+    var elHeight = $el.outerHeight();
+    var elWidth = $el.outerWidth();
+
+    var $wrapper = $("#scaleable-wrapper");
+
+    $wrapper.resizable({
+        resize: doResize
+    });
+
+    function doResize(event, ui) {
+
+        var scale, origin;
+
+        scale = Math.min(
+            ui.size.width / elWidth,
+            ui.size.height / elHeight
+        );
+
+        $el.css({
+            transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
+        });
+
+    }
+
+</script>
+</html>
